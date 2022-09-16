@@ -125,7 +125,79 @@ module.exports = {
         {
           from: path.resolve(__dirname, 'src/favicon.ico'),
           to: path.resolve(__dirname, 'dist')
-        }
+        },
+        {
+          from: path.resolve(__dirname, 'src/assets/Images/main/logoRobot.png'),
+          to: path.resolve(__dirname, 'dist/assets/Images/main')
+        },
+        {
+          from: path.resolve(__dirname, 'src/assets/Images/main/scrollDown.png'),
+          to: path.resolve(__dirname, 'dist/assets/Images/main')
+        },
+        {
+          from: path.resolve(__dirname, 'src/assets/Images/icons/iconsHeart.png'),
+          to: path.resolve(__dirname, 'dist/assets/Images/icons')
+        },
+        {
+          from: path.resolve(__dirname, 'src/assets/Images/icons/iconHierarchy.png'),
+          to: path.resolve(__dirname, 'dist/assets/Images/icons')
+        },
+        {
+          from: path.resolve(__dirname, 'src/assets/Images/icons/iconsHield.png'),
+          to: path.resolve(__dirname, 'dist/assets/Images/icons')
+        },
+        {
+          from: path.resolve(__dirname, 'src/assets/Images/idiology/оковы.jpg'),
+          to: path.resolve(__dirname, 'dist/assets/Images/idiology')
+        },
+        {
+          from: path.resolve(__dirname, 'src/assets/Images/idiology/война.jpg'),
+          to: path.resolve(__dirname, 'dist/assets/Images/idiology')
+        },
+        {
+          from: path.resolve(__dirname, 'src/assets/Images/idiology/мнения.jpg'),
+          to: path.resolve(__dirname, 'dist/assets/Images/idiology')
+        },
+        {
+          from: path.resolve(__dirname, 'src/assets/Images/idiology/особоОдаренный.jpg'),
+          to: path.resolve(__dirname, 'dist/assets/Images/idiology')
+        },
+        {
+          from: path.resolve(__dirname, 'src/assets/Images/idiology/особоОдаренный.jpg'),
+          to: path.resolve(__dirname, 'dist/assets/Images/idiology')
+        },
+        {
+          from: path.resolve(__dirname, 'src/assets/Images/idiology/особоОдаренный.jpg'),
+          to: path.resolve(__dirname, 'dist/assets/Images/idiology')
+        },
+        {
+          from: path.resolve(__dirname, 'src/assets/Images/icons/iconLern.png'),
+          to: path.resolve(__dirname, 'dist/assets/Images/icons')
+        },
+        {
+          from: path.resolve(__dirname, 'src/assets/Images/icons/iconRoboCreate.png'),
+          to: path.resolve(__dirname, 'dist/assets/Images/icons')
+        },
+        {
+          from: path.resolve(__dirname, 'src/assets/Images/joinUs/phone.png'),
+          to: path.resolve(__dirname, 'dist/assets/Images/joinUs')
+        },
+        {
+          from: path.resolve(__dirname, 'src/assets/Images/bestPrototypes/ns5-2.jpg'),
+          to: path.resolve(__dirname, 'dist/assets/Images/bestPrototypes')
+        },
+        {
+          from: path.resolve(__dirname, 'src/assets/Images/bestPrototypes/T800-2.jpg'),
+          to: path.resolve(__dirname, 'dist/assets/Images/bestPrototypes')
+        },
+        {
+          from: path.resolve(__dirname, 'src/assets/Images/bestPrototypes/walle-2.jpg'),
+          to: path.resolve(__dirname, 'dist/assets/Images/bestPrototypes')
+        },
+        {
+          from: path.resolve(__dirname, 'src/assets/Images/bestPrototypes/200years-2.jpg'),
+          to: path.resolve(__dirname, 'dist/assets/Images/bestPrototypes')
+        },
       ]
     }),
     new ImageMinimizerPlugin({

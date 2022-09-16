@@ -1,0 +1,241 @@
+@import "../variable/variable.scss";
+
+//скрывает существующее модальное окно
+.modal-window,
+.modal-overlay {
+  opacity: 0;
+  z-index: -1;
+}
+
+//если у элемента nmodal есть класс open - показыается модальное окно
+.nmodal.open .modal-overlay,
+.nmodal.open .modal-window {
+  opacity: 1;
+  z-index: 1000;
+}
+
+//при анимации исчезновения нужны стили отображения окна
+.nmodal.hide .modal-overlay,
+.nmodal.hide .modal-window {
+  opacity: 1;
+  z-index: 1000;
+}
+
+//анимация
+.nmodal.open .modal-window {
+  // transform: translateY(100px);
+  transform: translateY(60px);
+}
+
+@media (max-width:575px) {
+  .nmodal.open .modal-window {
+    transform: translateY(0);
+  }
+}
+
+.nmodal.open .modal-overlay {
+  background: rgba(0, 0, 0, .5);
+}
+
+//анимация исчезновения
+.nmodal.hide .modal-window {
+  // transform: translateY(-200px);
+  transform: translateY(-350px);
+}
+
+.nmodal.hide .modal-overlay {
+  background: rgba(0, 0, 0, 0);
+}
+
+//стили кнопок модалки
+.btn {
+  font-weight: bold;
+  padding: 5px 10px;
+  margin: 0 5px;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 2px;
+  cursor: pointer;
+  transition: .2s;
+
+  &.btn-primary {
+    color: white;
+    // border-color: rgb(3, 219, 3);
+    // background-color: rgb(3, 175, 3);
+    // border-color: rgb(0, 132, 255);
+    border-color: rgb(3, 45, 83);
+    background: rgb(3, 45, 83);
+
+    &:hover {
+      // background-color: rgb(3, 219, 3);
+      background: rgb(0, 132, 255);
+      border-color: rgb(0, 132, 255);
+    }
+  }
+
+  &.btn-danger {
+    border-color: rgb(255, 0, 0);
+    background-color: rgb(214, 0, 0);
+
+    &:hover {
+      background-color: rgb(255, 0, 0);
+    }
+  }
+}
+
+.modal-overlay {
+  // элемент затемнения
+  position: fixed;
+  // чтобы элемент был на весь экран
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  // background: rgba(0, 0, 0, .5); //базовый стиль фона модалки
+  background: rgba(0, 0, 0, 0);
+  transition: background .2s ease-in;
+
+  .modal-window {
+    // само модальное окно
+    // width: 600px; //задается в JS
+    border-radius: 5px;
+    background: #fff;
+    // background: #11749e;
+    // background: #1386b8;
+    // color: white;
+    color: #1386b8;
+    // margin: 100px auto; //изначальное/базовое положение окна
+    margin: 0 auto;
+    transform: translateY(-200px); //убираем окно в начало анимации
+    transition: transform .2s ease-in;
+
+    .modal-header {
+      //разкидывает по разным углам заголовок и крестик
+      padding: 15px;
+      display: flex;
+      justify-content: space-between;
+      font-size: 1.5rem;
+      border-bottom: 2px solid #1386b8;
+      // border-bottom: 2px solid white;
+
+      .modal-title {
+        @include adaptiv-font(24, 18);
+        // color: #1386b8;
+        font-weight: 900;
+      }
+
+      .modal-close {
+        height: 30px;
+        border-radius: 5px;
+        // outline: 2px solid #1386b8;
+        // outline: 2px solid rgb(0, 102, 197);
+        outline: 2px solid rgb(3, 45, 83);
+        // color: #1386b8;
+        // color: rgb(0, 102, 197);
+        color: rgb(3, 45, 83);
+        padding: 1px 8px;
+        cursor: pointer;
+        transition: .1s;
+
+        &:hover {
+          color: rgb(0, 132, 255);
+          outline: 2px solid rgb(0, 132, 255);
+          // color: white;
+          // outline: 2px solid white;
+        }
+      }
+    }
+
+    .modal-body {
+      // color: #1386b8;
+
+      .wrapImg {
+        width: 200px;
+        height: 200px;
+        margin: 0 auto;
+        overflow: hidden;
+        margin-bottom: 15px;
+
+        .img1 {
+          margin: -20px 0 0 -75px;
+        }
+
+        .img2 {
+          margin: -32px 0 0 -127px;
+        }
+
+        .img3 {
+          margin: -79px 0 0 -32px;
+        }
+
+        .img4 {
+          margin: -31px 0 0 -84px;
+        }
+      }
+
+      h2 {
+        @include adaptiv-font(24, 18);
+        margin: 10px 0;
+      }
+
+      p {
+        @include adaptiv-font(16, 14);
+        max-height: 200px;
+        overflow-y: scroll;
+        padding: 0 15px 15px;
+        margin: 0 5px;
+      }
+    }
+
+    .modal-footer {
+      padding: 15px;
+      border-top: 2px solid #1386b8;
+      // border-top: 2px solid white;
+    }
+  }
+
+  @media (min-width:1600px) {
+    .modal-window {
+      .modal-header {
+        .modal-title {
+          font-size: 24px;
+        }
+      }
+
+      .modal-body {
+        h2 {
+          font-size: 24px;
+        }
+
+        p {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+
+  @media (max-width:974px) {
+    .modal-window {
+      margin: 0 3%;
+    }
+  }
+
+  @media (max-width:575px) {
+    .modal-window {
+      .modal-header {
+        padding: 10px;
+      }
+
+      .modal-body {
+        p {
+          padding: 0 15px 10px;
+          margin: 0;
+        }
+      }
+
+      .modal-footer {
+        padding: 10px;
+      }
+    }
+  }
+}

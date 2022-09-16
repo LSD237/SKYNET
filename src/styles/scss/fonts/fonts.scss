@@ -1,0 +1,39 @@
+@font-face {
+  font-family: 'Roboto';
+  src: url("@assets/fonts/Roboto-Regular.woff") format("woff"),
+    url("@assets/fonts/Roboto-Regular.woff2") format("woff2"),
+    url("@assets/fonts/Roboto-Regular.ttf") format("truetype");
+
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url("@assets/fonts/Roboto-Bold.woff") format("woff"),
+    url("@assets/fonts/Roboto-Bold.woff2") format("woff2"),
+    url("@assets/fonts/Roboto-Bold.ttf") format("truetype");
+
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Rubik';
+  src: url("@assets/fonts/Rubik-Medium.woff") format("woff"),
+    url("@assets/fonts/Rubik-Medium.woff2") format("woff2"),
+    url("@assets/fonts/Rubik-Medium.ttf") format("truetype");
+
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Russo One';
+  src: url("@assets/fonts/RussoOne-Regular.woff") format("woff"),
+    url("@assets/fonts/RussoOne-Regular.woff2") format("woff2"),
+    url("@assets/fonts/RussoOne-Regular.ttf") format("truetype");
+
+  font-weight: 400;
+  font-style: normal;
+}

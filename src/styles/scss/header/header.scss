@@ -1,0 +1,138 @@
+.header {
+  &__wrapper {
+    z-index: 99;
+    position: fixed;
+    width: 100%;
+    max-width: 1600px;
+    margin: auto;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 100%);
+  }
+
+  &__logo {
+    flex-grow: 1;
+  }
+
+  &__logo-img {
+    max-width: 100%;
+    height: 100px;
+    margin: 10px auto;
+  }
+
+  &__menu {
+    display: flex;
+    flex-grow: 2;
+    flex-flow: row nowrap;
+    justify-content: end;
+  }
+
+  &__menu-item {
+    list-style-type: none;
+  }
+
+  &__link {
+    text-decoration: none;
+    padding: 49px;
+    color: white;
+    font-size: 21px;
+    transition: .2s;
+
+    &:hover {
+      color: #1386b8;
+    }
+  }
+
+  &__link_active {
+    color: #1386b8;
+  }
+
+  &__wrapper-mob {
+    display: none;
+  }
+
+  &__menu-mob {
+    display: none;
+    position: absolute;
+    top: 48px;
+    right: -44px;
+    background: #242424;
+    width: 280px;
+    border: 2px solid #1386b8;
+    border-radius: 10px;
+  }
+}
+
+@media (max-width:1199px) {
+  .header {
+    &__menu {
+      justify-content: space-around;
+    }
+  }
+}
+
+@media (max-width:991px) {
+  .header {
+    &__menu {
+      display: none;
+    }
+
+    &__logo {
+      flex-grow: 0;
+    }
+
+    &__logo-img {
+      height: 65px;
+    }
+
+    &__wrapper-mob {
+      display: block;
+      position: relative;
+
+      &:hover .header__menu-mob {
+        display: block;
+      }
+    }
+
+    &__svg-burger {
+      height: 50px;
+      fill: #1386b8;
+      cursor: pointer;
+    }
+
+    &__menu-item-mob {
+      list-style-type: none;
+      padding: 20px 0;
+    }
+
+    &__link {
+      padding: 0;
+    }
+  }
+}
+
+@media (max-width:575px) {
+  .header {
+    &__logo-img {
+      height: 39px;
+    }
+
+    &__svg-burger {
+      height: 36px;
+    }
+
+    &__menu-mob {
+      top: 35px;
+    }
+  }
+}
+
+//* Сетка
+// @media (max-width:1199px) {}
+// @media (max-width:991px) {}
+// @media (max-width:767px) {}
+// @media (max-width:575px) {}

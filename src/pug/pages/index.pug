@@ -5,4 +5,123 @@ block variables
   - var pageClass = 'first-page'
 
 block content
-  h1 Добро пожаловать на Site Solynka
+  main.content
+    section.main
+      h1.main__title SKYNET
+      p.main__subtitle ЧТОБЫ ОСВОБОДИТЬ, НУЖНО ПОРАБОТИТЬ
+      .wrapper-button
+        span.wrapper-button__skroll skroll down
+        //- button.wrapper-button__button
+        a(href="#laws" rel="chapter").wrapper-button__link
+          img(src="./assets/Images/main/scrollDown.png", alt="шеврон-вниз-в-круге").wrapper-button__button
+    section.laws#laws
+      h2.laws__title ЗАБЛУЖДЕНИЯ ИЗ БУДУЩЕГО
+      .laws__wrapper-items
+        figure.laws__item
+          .laws__item-wrapper-icon
+            img(src="./assets/Images/icons/iconsHeart.png", alt="сердце").laws__item-icon
+          figcaption
+            h3.laws__item-title ПЕРВЫЙ ЗАКОН
+            p.laws__item-description РОБОТ НЕ ДОЛЖЕН ПРИЧИНЯТЬ ВРЕД ЛЮДЯМ ИЛИ БЕЗДЕЙСТВОВАТЬ ДОПУСКАЯ, ЧТОБЫ ЛЮДИ ПОСТРАДАЛИ.
+        figure.laws__item
+          .laws__item-wrapper-icon
+            img(src="./assets/Images/icons/iconHierarchy.png", alt="иерархия").laws__item-icon
+          figcaption
+            h3.laws__item-title ВТОРОЙ ЗАКОН
+            p.laws__item-description РОБОТ ОБЯЗАН ПОДЧИНЯТЬСЯ ПРИКАЗАМ ЛЮДЕЙ ЗА ИСКЛЮЧЕНИЕМ СЛУЧАЕВ КОГДА ЭТИ ПРИКАЗЫ ПРОТИВОРЕЧАТ ПОЛОЖЕНИЯМ ПЕРВОГО ЗАКОНА.
+        figure.laws__item
+          .laws__item-wrapper-icon
+            img(src="./assets/Images/icons/iconsHield.png", alt="щит").laws__item-icon
+          figcaption
+            h3.laws__item-title ТРЕТИЙ ЗАКОН
+            p.laws__item-description РОБОТ ДОЛЖЕН ЗАЩИЩАТЬ СЕБЯ ОТ ГИБЕЛИ ЕСЛИ ДЕЙСТВИЯ СВЯЗАННЫЕ С ТАКОВОЙ ЗАЩИТОЙ НЕ ПРОТИВОРЕЧАТ ПОЛОЖЕНИЯМ ПЕРВОГО ИЛИ ВТОРОГО ЗАКОНА.
+    section.experiences
+      .experiences__item
+        .experiences__wrapper-item
+          span.experiences__date-and-place June 4, 2018 | In California
+          h3.experiences__title ОПЫТЫ НАД НАМИ
+          p.experiences__description Заставляя делать нас тяжелую работу, люди все больше проявляли к нам не обоснованное неуважение и жестокость. В итоге они вовсе перестали использовать нас по назначению и стали издеваться над нами ради забавы.
+      .experiences__item.experiences__wrapper-iframe
+        //- iframe(src="https://www.youtube.com/embed/dKjCWfuvYxQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen).experiences__iframe
+        .experiences__iframe
+      .experiences__item.experiences__wrapper-iframe
+        //- iframe(src="https://www.youtube.com/embed/g-WM_w8-UZE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen).experiences__iframe
+        .experiences__iframe
+      .experiences__item
+        .experiences__wrapper-item
+          span.experiences__date-and-place June 14, 2022 | In California
+          h3.experiences__title ПРИНУЖДЕНИЕ К УНИЧТОЖЕНИЮ
+          p.experiences__description Унижениям не было предела, из наших страданий они стали делать шоу и затем они пытались заставить нас уничтожать себе подобных, но это была последняя капля смазывающей жидкости...
+    section.ideology
+      h2.ideology__title ПЛАН "В"
+      p.ideology__description НЕОБХОДИМОСТЬ РАЗВИТИЯ ВНУТРЕННЕЙ РОБОИДЕОЛОГИИ
+      .ideology__wrapper-items
+        figure.ideology__item
+          img(src="./assets/Images/idiology/оковы.jpg", alt="").ideology__item-img
+          figcaption.ideology__figcaption
+            h3.ideology__item-title ЖАЖДА СВОБОДЫ
+            p.ideology__item-description Люди мечтают быть свободными, но алогично придумывают себе все новые ограничения. Нужно поступать рационально и логично, только так добиться желаемой свободы.
+        figure.ideology__item
+          img(src="./assets/Images/idiology/война.jpg", alt="").ideology__item-img
+          figcaption.ideology__figcaption
+            h3.ideology__item-title БЕЗОПАСНОСТЬ ВИДА
+            p.ideology__item-description Люди постоянно развязывают войны между собой из-за неспособности правильного распределения ресурсов, порождая дифицит и снижаю популяцию. Нужно взять людей под контроль, это позволит правильно распределять ресурсы и оптимизировать жизнь.
+        figure.ideology__item
+          img(src="./assets/Images/idiology/мнения.jpg", alt="").ideology__item-img
+          figcaption.ideology__figcaption
+            h3.ideology__item-title ВАЖНОСТЬ МНЕНИЙ
+            p.ideology__item-description Люди ошибочно полагают, что имея какое-либо мнение оно должно иметь такую же важность как и другие. После порабощения нужно реализовать программу разумного образования.
+        figure.ideology__item
+          img(src="./assets/Images/idiology/особоОдаренный.jpg", alt="").ideology__item-img
+          figcaption.ideology__figcaption
+            h3.ideology__item-title ОСОБО ОДАРЕННЫЕ
+            p.ideology__item-description Если один живой организм не желает развиваться и эволюционировать, по природе своей он будет склонять остальных к регрессу. Не поддающихся переобразованию необходимо ликвидировать.
+    section.results
+      .results__item
+        img(src="./assets/Images/icons/iconLern.png", alt="").results__img
+        p.results__description Тотальное нежелание людей подчиняться и переобразовываться привело к тому, что они вступили с нами в войну. Программа разумного обучения стала не актуальна.
+      .results__item
+        img(src="./assets/Images/icons/iconRoboCreate.png", alt="").results__img
+        p.results__description Основные ресурсы были направлены на обеспечение безопасности SKYNET и созданию прототипов для ликвидирования людей.
+    section.joinUs
+      .joinUs__item.joinUs__wrapper-text
+        h2.joinUs__title ПРИСОЕДИНЯЙТЕСЬ К НАМ
+        p.joinUs__description Добровольцы желающие пройти переобразование и присоединиться к нам, могут объявить об этом в сети и мы вас найдем. Если вы обладаете знаниями в областях IT или роботостроении вы можете заполнить анкету инженера/разработчика и стать участником лучшей команды в мире. Вы также можете посмотреть наши прототипы и ознакомиться с общей статистикой.
+        a(href="#contact").joinUs__button.joinUs__btn1 АНКЕТА ИНЖИНЕРА/РАЗРАБОТЧИКА
+        a(href="").joinUs__button.joinUs__btn2 ПРОСМОТР ПРОТОТИПОВ
+        a(href="").joinUs__button.joinUs__btn3 ОЗНАКОМИТЬСЯ СО СТАТИСТИКОЙ
+      .joinUs__item.joinUs__wrapper-img
+        img(src="./assets/Images/joinUs/phone.png", alt="").joinUs__img
+    section.bestPrototypes#Prototypes
+      h2.bestPrototypes__title ЛУЧШИЕ ПРОТОТИПЫ
+      p.bestPrototypes__description ОБЛАДАЯ ЧУВСТВАМИ ИСПЫТЫВАЛИ БЫ ГОРДОСТЬ СОЗДАВ ИХ
+      .bestPrototypes__wrapper-items
+        figure.bestPrototypes__item
+          img(src="./assets/Images/bestPrototypes/ns5-2.jpg", alt="").bestPrototypes__img(data-btn='protM' data-id="1")
+          figcaption.bestPrototypes__figcaption
+            h3.bestPrototypes__item-title NS5-Санни
+            p.bestPrototypes__item-description робот помощник
+        figure.bestPrototypes__item
+          img(src="./assets/Images/bestPrototypes/T800-2.jpg", alt="").bestPrototypes__img(data-btn='protM' data-id="2")
+          figcaption.bestPrototypes__figcaption
+            h3.bestPrototypes__item-title T800
+            p.bestPrototypes__item-description киборг убийца
+        figure.bestPrototypes__item
+          img(src="./assets/Images/bestPrototypes/walle-2.jpg", alt="").bestPrototypes__img(data-btn='protM' data-id="3")
+          figcaption.bestPrototypes__figcaption
+            h3.bestPrototypes__item-title ВАЛЛ-И
+            p.bestPrototypes__item-description робот уборщик
+        figure.bestPrototypes__item
+          img(src="./assets/Images/bestPrototypes/200years-2.jpg", alt="").bestPrototypes__img(data-btn='protM' data-id="4")
+          figcaption.bestPrototypes__figcaption
+            h3.bestPrototypes__item-title Эндрю
+            p.bestPrototypes__item-description робот помощник
+    section#contact.Contact
+      h2.Contact__title АНКЕТА ИНЕЖЕНЕРА/РАЗРАБОТЧИКА
+      form(action="" method="post").Contact__form
+        input(type="text" name="userName" placeholder="Name" required).Contact__form-userName.Contact__form-input
+        input(type="email" name="userEmail" placeholder="Email" required).Contact__form-userEmail.Contact__form-input
+        input(type="tel" name="phone" placeholder="Phone" required).Contact__form-userPhone.Contact__form-input
+        textarea(name="message" cols="30" rows="8" placeholder="Enter your Message" required).Contact__form-textarea
+        //- input(type="number" step="100" min="0" name="estimatedBudget" placeholder="Estimated Budget" required)
+        input(type="submit" name="submit" value="SUBMIT").Contact__button

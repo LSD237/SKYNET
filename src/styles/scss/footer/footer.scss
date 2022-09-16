@@ -1,0 +1,42 @@
+.footer {
+  background-color: #242424;
+  color: white;
+
+  &__container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  &__title {
+    letter-spacing: 4px;
+    margin: 30px 15px;
+  }
+
+  &__wrapper-icons {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+  }
+
+  &__link-icon {
+    line-height: 0;
+    width: 50px;
+    height: 50px;
+    margin: 15px 5px;
+  }
+
+  &__icon {
+    transition: .2s;
+    cursor: pointer;
+    fill: white;
+
+    &:hover {
+      // fill: #1386b8;
+      fill: #1499d1;
+    }
+  }
+}
