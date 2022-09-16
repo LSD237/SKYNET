@@ -34,3 +34,17 @@ Prototypes.addEventListener('click', event => {
     prototypesModal.open()
   }
 })
+
+//Плавный скрол до секций
+const smoothLinks = document.querySelectorAll('a[href^="#"]')
+for (const smoothLink of smoothLinks) {
+  smoothLink.addEventListener("click", function (event) {
+    event.preventDefault()
+    const id = smoothLink.getAttribute('href')
+
+    document.querySelector(id).scrollIntoView({
+      behavior: 'smooth',
+      block: 'start'
+    })
+  })
+}
