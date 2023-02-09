@@ -1,0 +1,234 @@
+extends ../layout/main
+
+block variables
+  - var title = 'Статистика'
+  - var pageClass = 'second-page'
+
+block content
+  main.content
+    section.second.content
+      aside.side.js-side
+        .side__inner
+          .side__header
+            a(href="#").side__logo
+              .side__logo-text 
+                span Our
+                | Statistics
+            .side__toggle.js-side__toggle
+              svg(viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg')
+                path(d='m464.883 64.267h-417.766c-25.98 0-47.117 21.136-47.117 47.149 0 25.98 21.137 47.117 47.117 47.117h417.766c25.98 0 47.117-21.137 47.117-47.117 0-26.013-21.137-47.149-47.117-47.149z')
+                path(d='m464.883 208.867h-417.766c-25.98 0-47.117 21.136-47.117 47.149 0 25.98 21.137 47.117 47.117 47.117h417.766c25.98 0 47.117-21.137 47.117-47.117 0-26.013-21.137-47.149-47.117-47.149z')
+                path(d='m464.883 353.467h-417.766c-25.98 0-47.117 21.137-47.117 47.149 0 25.98 21.137 47.117 47.117 47.117h417.766c25.98 0 47.117-21.137 47.117-47.117 0-26.012-21.137-47.149-47.117-47.149z')
+            .side__admin
+              img(src="./assets/Images/secondPage/myPhoto/me.jpg", alt="Никита Кравец", title="Никита Кравец").side__admin-image.side_image
+              .side__wrap-text
+                .side__admin-text Никита Кравец
+                .side__admin-subText Admin | Project Manager
+            
+          .side__pages Pages
+          nav.nav
+            ul.nav__list
+              li.nav__list-item
+                a.nav__list-link(href="#" title="Human Popular" data-id="HumPop").js-nav__list-link.active
+                  .nav__list-link-wrapSvg
+                    svg.nav__list-link-icon(fill='white' width='50px' height='35px' viewBox='0 0 500 500' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink')
+                      path(d='M380.666502,305.007405 C380.555864,305.004946 380.445276,305.002661 380.33474,305.000548 C393.961558,305.045201 394.264513,305.309583 380.666502,305.007405 Z M380,305 C434.169626,305 478.279423,348.071249 479.950872,401.835227 C479.983543,402.886146 480,423.941151 480,425 C480,425 457,424.727394 450,425 C450.039053,423.711242 450.036927,402.417908 449.994098,401.122262 C448.940251,369.241544 423.242602,335.960947 380,335 C376.414483,334.920322 372.955938,335.094588 369.626894,335.499024 C368.836084,325.371312 366.785567,315.597172 363.633786,306.332211 C368.956707,305.456198 374.425078,305 380,305 Z M110,285 C121.572318,285 132.685523,286.965697 143.023932,290.581408 C138.508634,299.431795 135.062942,308.918504 132.852997,318.87036 C125.914975,316.552644 118.279045,315.183979 110,315 C66.6376322,314.036392 41.8460786,350.214412 40.0990864,381.480838 C40.0331091,382.661653 40,423.835462 40,425 L10,425 L10.0008529,422.992799 C10.0050211,414.538639 10.024458,382.546321 10.0589468,381.533823 C11.8855278,327.910366 55.9316374,285 110,285 Z M250.33474,245.000548 C262.846343,245.041547 264.125685,245.267781 253.726077,245.070642 C306.391115,246.997315 348.658853,289.652666 349.968706,342.473499 C349.989528,343.313139 350,425 350,425 L320,425 L320.000843,422.720206 C320.005711,409.527717 320.029918,343.533786 320.027299,342.903993 C319.892503,310.493928 294.048934,275.978865 250,275 C206.102031,274.02449 181.236474,311.113802 180.044907,342.637096 C180.014993,343.428469 180,425 180,425 L150,425 L150.00094,420.018554 C150.004489,402.238391 150.018086,342.909495 150.041613,342.087026 C151.582921,288.205792 195.745834,245 250,245 L250.541,245.004 L250.500583,245.003847 C250.445289,245.002704 250.390008,245.001605 250.33474,245.000548 Z M120.33474,285.000548 C133.961558,285.045201 134.264513,285.309583 120.666502,285.007405 C120.555864,285.004946 120.445276,285.002661 120.33474,285.000548 Z M391,165 C424.137085,165 451,191.862915 451,225 C451,258.137085 424.137085,285 391,285 C357.862915,285 331,258.137085 331,225 C331,191.862915 357.862915,165 391,165 Z M110,145 C143.137085,145 170,171.862915 170,205 C170,238.137085 143.137085,265 110,265 C76.862915,265 50,238.137085 50,205 C50,171.862915 76.862915,145 110,145 Z M391,190 C371.670034,190 356,205.670034 356,225 C356,244.329966 371.670034,260 391,260 C410.329966,260 426,244.329966 426,225 C426,205.670034 410.329966,190 391,190 Z M110,170 C90.6700338,170 75,185.670034 75,205 C75,224.329966 90.6700338,240 110,240 C129.329966,240 145,224.329966 145,205 C145,185.670034 129.329966,170 110,170 Z M250,75 C291.421356,75 325,108.578644 325,150 C325,191.421356 291.421356,225 250,225 C208.578644,225 175,191.421356 175,150 C175,108.578644 208.578644,75 250,75 Z M250,100 C222.385763,100 200,122.385763 200,150 C200,177.614237 222.385763,200 250,200 C277.614237,200 300,177.614237 300,150 C300,122.385763 277.614237,100 250,100 Z')
+                  span.nav__list-link-text Human Population
+              li.nav__list-item
+                a.nav__list-link(href="#" title="Number Of Robots" data-id="NumOfRob").js-nav__list-link
+                  .nav__list-link-wrapSvg
+                    svg.nav__list-link-icon(fill='white' width='50px' height='50px' viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg')
+                      path(d='M442.28,200.65a3.91,3.91,0,0,0-.26-.44c0-.05-.11-.06-.15-.11a57.51,57.51,0,0,0-45.71-22.68h-10.9a57.48,57.48,0,0,0-45.71,22.69c-.05,0-.11.06-.15.11s-.15.28-.25.41A57.27,57.27,0,0,0,327.65,235v15.13q-1.93-3.22-4.17-6.23a4.4,4.4,0,0,0-.39-.66c-.06-.07-.16-.1-.23-.17-1.2-1.58-2.47-3.11-3.79-4.58v-66a57.27,57.27,0,0,0-11.5-34.39c-.11-.14-.14-.3-.26-.43s-.11-.07-.15-.12A57.5,57.5,0,0,0,261.45,115h-10.9a57.48,57.48,0,0,0-45.71,22.69c-.05,0-.11.06-.15.1s-.15.29-.25.42a57.24,57.24,0,0,0-11.51,34.4v66c-1.33,1.48-2.59,3-3.8,4.59-.07.07-.16.1-.22.17a4.15,4.15,0,0,0-.38.64,71.4,71.4,0,0,0-4.18,6.24V235a57.26,57.26,0,0,0-11.49-34.39c-.11-.14-.14-.31-.26-.44s-.11-.06-.15-.11a57.51,57.51,0,0,0-45.71-22.68h-10.9a57.51,57.51,0,0,0-45.72,22.69s-.1.06-.14.11-.15.28-.25.41A57.27,57.27,0,0,0,58.22,235v46.24a5.33,5.33,0,0,0,5.34,5.33H81.9v15.44a15.72,15.72,0,0,0,31.43,0V286.61h15.93v15.44a15.71,15.71,0,1,0,31.42,0V286.61h13.11c0,.64-.1,1.27-.1,1.91v61.67a5.33,5.33,0,0,0,5.33,5.33h26.24v22.35a19.17,19.17,0,1,0,38.34,0V355.52h24.8v22.35a19.17,19.17,0,1,0,38.34,0V355.52H333a5.33,5.33,0,0,0,5.33-5.33V288.52c0-.64-.08-1.27-.1-1.91h13.11v15.44a15.71,15.71,0,0,0,31.42,0V286.61h15.93v15.44a15.72,15.72,0,0,0,31.43,0V286.61h18.34a5.33,5.33,0,0,0,5.34-5.33V235A57.27,57.27,0,0,0,442.28,200.65ZM115.84,188.09h10.9a46.64,46.64,0,0,1,34.59,15.47c-5.4,5.71-15.15,17.43-19,31.34a8.56,8.56,0,0,1-8.19,6.24H108.48a8.56,8.56,0,0,1-8.19-6.24c-3.89-13.91-13.64-25.63-19-31.34A46.64,46.64,0,0,1,115.84,188.09Zm-13.17,114a5.05,5.05,0,1,1-10.1,0V286.61h10.1Zm47.34,0a5,5,0,1,1-10.09,0V286.61H150ZM173.69,276H68.89V235a46.31,46.31,0,0,1,6-22.59c4.82,5.36,12.13,14.74,15.09,25.32a19.24,19.24,0,0,0,18.45,14H134.1a19.24,19.24,0,0,0,18.45-14c2.95-10.53,10.27-19.93,15.1-25.31a46.37,46.37,0,0,1,6,22.58ZM256,298.43H238.91a13.17,13.17,0,0,1-12.62-9.61c-5.39-19.31-19.49-35.47-26.2-42.35a64.2,64.2,0,0,1,48.64-22.32h14.54a64.2,64.2,0,0,1,48.64,22.32c-6.71,6.88-20.81,23-26.21,42.35a13.16,13.16,0,0,1-12.62,9.61ZM209.65,150c4.82,5.36,12.13,14.74,15.09,25.32a19.24,19.24,0,0,0,18.45,14h25.62a19.24,19.24,0,0,0,18.45-14c2.95-10.54,10.27-19.94,15.1-25.31a46.36,46.36,0,0,1,6,22.57v56.15a74.51,74.51,0,0,0-45.13-15.24H248.73a74.53,74.53,0,0,0-45.13,15.24V172.57A46.27,46.27,0,0,1,209.65,150Zm40.9-24.37h10.9A46.68,46.68,0,0,1,296,141.09c-5.4,5.71-15.15,17.44-19,31.34a8.56,8.56,0,0,1-8.19,6.24H243.19a8.56,8.56,0,0,1-8.19-6.24c-3.89-13.9-13.64-25.63-19-31.34A46.68,46.68,0,0,1,250.55,125.62ZM232.94,377.87a8.51,8.51,0,1,1-17,0V355.52h17Zm63.13,0a8.51,8.51,0,1,1-17,0V355.52h17Zm31.58-33H184.35V288.52a63.87,63.87,0,0,1,9.36-33.25c6.37,6.76,17.89,20.59,22.31,36.42a23.87,23.87,0,0,0,22.89,17.4h34.17A23.84,23.84,0,0,0,296,291.69c4.41-15.78,15.95-29.63,22.32-36.41a63.84,63.84,0,0,1,9.36,33.24Zm57.61-156.77h10.9a46.64,46.64,0,0,1,34.59,15.47c-5.4,5.71-15.15,17.43-19,31.34a8.56,8.56,0,0,1-8.19,6.24H377.89a8.54,8.54,0,0,1-8.18-6.24c-3.88-13.91-13.64-25.63-19-31.34A46.64,46.64,0,0,1,385.26,188.09Zm-13.18,114a5,5,0,1,1-10.09,0V286.61h10.09Zm47.35,0a5.05,5.05,0,1,1-10.1,0V286.61h10.1ZM443.11,276H338.31V235a46.31,46.31,0,0,1,6.05-22.59c4.82,5.36,12.13,14.74,15.09,25.32a19.21,19.21,0,0,0,18.44,14h25.63a19.24,19.24,0,0,0,18.45-14c2.95-10.53,10.27-19.93,15.1-25.31a46.37,46.37,0,0,1,6,22.58Z')
+                  span.nav__list-link-text Number Of Robots
+              li.nav__list-item
+                a.nav__list-link(href="#" title="Human Achievements" data-id="HumAch").js-nav__list-link
+                  .nav__list-link-wrapSvg
+                    svg.nav__list-link-icon(fill='white' width='50px' height='50px' viewBox='0 0 64 64' xmlns='http://www.w3.org/2000/svg')
+                      path(d='M32,2A20.47,20.47,0,0,0,18,37.43V56a1,1,0,0,0,.53.88,1,1,0,0,0,1-.05L22,55.2V61a1,1,0,0,0,.53.88,1,1,0,0,0,1-.05L32,56.2l8.45,5.63a1,1,0,0,0,1,.05A1,1,0,0,0,42,61V55.2l2.45,1.63a1,1,0,0,0,1,.05A1,1,0,0,0,46,56V37.43A20.47,20.47,0,0,0,32,2ZM20,54.13v-15a22,22,0,0,0,2,1.29V52.8Zm4-12.76a19.88,19.88,0,0,0,2,.73V57.8l-2,1.33Zm7.45,12.8L28,56.46V42.6a20.2,20.2,0,0,0,8,0V56.46l-3.45-2.29A1,1,0,0,0,31.45,54.17ZM38,57.8V42.1a19.88,19.88,0,0,0,2-.73V59.13Zm6-3.67L42,52.8V40.38a22,22,0,0,0,2-1.29ZM32,41A18.5,18.5,0,1,1,50.5,22.5,18.52,18.52,0,0,1,32,41Z')
+                      path(d='M32,7a15.5,15.5,0,0,0-4.26,30.41,1,1,0,1,0,.55-1.93,13.5,13.5,0,1,1,7.42,0,1,1,0,0,0,.27,2,1.35,1.35,0,0,0,.28,0A15.5,15.5,0,0,0,32,7Z')
+                      path(d='M26.34,30.24a2.59,2.59,0,0,0,2.6.28l2.81-1.27a.62.62,0,0,1,.5,0l2.81,1.27a2.59,2.59,0,0,0,2.6-.28,2.49,2.49,0,0,0,1-2.33l-.36-3a.5.5,0,0,1,.14-.42l2.1-2.23a2.49,2.49,0,0,0,.57-2.49,2.56,2.56,0,0,0-2-1.73l-3-.59a.58.58,0,0,1-.39-.27l-1.51-2.64a2.59,2.59,0,0,0-4.48,0l-1.51,2.64a.58.58,0,0,1-.39.27l-3,.59a2.56,2.56,0,0,0-2,1.73,2.49,2.49,0,0,0,.57,2.49l2.1,2.23a.49.49,0,0,1,.14.41l-.36,3A2.49,2.49,0,0,0,26.34,30.24ZM24.9,20.89a.47.47,0,0,1-.12-.51.54.54,0,0,1,.43-.38l3-.59A2.53,2.53,0,0,0,30,18.17l1.51-2.64a.6.6,0,0,1,1,0L34,18.17a2.53,2.53,0,0,0,1.74,1.24l3,.59a.54.54,0,0,1,.43.38.47.47,0,0,1-.12.51L37,23.11a2.55,2.55,0,0,0-.68,2l.37,3a.52.52,0,0,1-.22.48.57.57,0,0,1-.6.06l-2.81-1.26a2.62,2.62,0,0,0-2.14,0l-2.81,1.26a.57.57,0,0,1-.6-.06.52.52,0,0,1-.22-.48l.37-3a2.55,2.55,0,0,0-.68-2Z')
+                      circle(cx='32' cy='37' r='1')
+                  span.nav__list-link-text Human Achievements
+              li.nav__list-item
+                a.nav__list-link(href="#" title="Robot Achievements" data-id="RobAch").js-nav__list-link
+                  .nav__list-link-wrapSvg
+                    svg.nav__list-link-icon(fill='white' width='50px' height='50px' viewBox='0 0 500 500' xmlns='http://www.w3.org/2000/svg')
+                      path(d='M256,152.26a6.68,6.68,0,0,0,6.68-6.69v-76a6.69,6.69,0,1,0-13.37,0v76A6.68,6.68,0,0,0,256,152.26Z')
+                      path(d='M186.5,171a6.69,6.69,0,0,0,5.79-10l-38-65.76a6.68,6.68,0,1,0-11.57,6.69l38,65.76A6.65,6.65,0,0,0,186.5,171Z')
+                      path(d='M366.81,92.74a6.7,6.7,0,0,0-9.13,2.45l-37.36,64.69a6.69,6.69,0,0,0,2.45,9.14,6.7,6.7,0,0,0,9.13-2.45l37.35-64.69A6.68,6.68,0,0,0,366.81,92.74Z')
+                      path(d='M370.57,218.52A6.7,6.7,0,0,0,379.7,221l65.77-38a6.69,6.69,0,0,0-6.69-11.59l-65.76,38A6.69,6.69,0,0,0,370.57,218.52Z')
+                      path(d='M139,209.38l-65.76-38A6.69,6.69,0,0,0,66.53,183l65.77,38a6.7,6.7,0,0,0,9.13-2.45A6.69,6.69,0,0,0,139,209.38Z')
+                      path(d='M471.09,278h-76a6.69,6.69,0,0,0,0,13.38h76a6.69,6.69,0,0,0,0-13.38Z')
+                      path(d='M445.47,386.34l-65.77-38A6.68,6.68,0,1,0,373,360l65.76,38a6.78,6.78,0,0,0,3.35.89,6.69,6.69,0,0,0,3.34-12.48Z')
+                      path(d='M123.6,284.67a6.68,6.68,0,0,0-6.69-6.69h-76a6.69,6.69,0,0,0,0,13.38h76A6.68,6.68,0,0,0,123.6,284.67Z')
+                      path(d='M132.3,348.37l-65.77,38a6.69,6.69,0,0,0,3.34,12.48,6.78,6.78,0,0,0,3.35-.89L139,360a6.68,6.68,0,0,0-6.68-11.58Z')
+                      path(d='M256,185.24a104.14,104.14,0,0,0-62,187.82v34.58a6.68,6.68,0,0,0,6.69,6.68h110.7a6.68,6.68,0,0,0,6.69-6.68V373.06A104.14,104.14,0,0,0,256,185.24Zm51.56,178.89a6.69,6.69,0,0,0-2.89,5.5V401H279.31V327l16.14-16.14a26.09,26.09,0,0,0,7.84,1.32,26.79,26.79,0,1,0-19.45-8.63l-15.95,15.95a6.69,6.69,0,0,0-2,4.73V401H246.07V324.18a6.69,6.69,0,0,0-2-4.73l-16-15.95a26.45,26.45,0,1,0-19.45,8.63,26.09,26.09,0,0,0,7.84-1.32L232.69,327v74H207.34V369.63a6.69,6.69,0,0,0-2.89-5.5,90.8,90.8,0,1,1,103.1,0Zm-17.43-78.55a13.17,13.17,0,1,1,13.17,13.17A13.19,13.19,0,0,1,290.12,285.58Zm-81.41,13.17a13.17,13.17,0,1,1,13.17-13.17A13.19,13.19,0,0,1,208.71,298.75Z')
+                      path(d='M311.35,435.73H200.65a6.69,6.69,0,1,0,0,13.38h110.7a6.69,6.69,0,1,0,0-13.38Z')
+                  span.nav__list-link-text Robot Achievements
+          .side__membersHeader Members
+          .side__members
+            img(src="./assets/Images/secondPage/myPhoto/me.jpg", alt="Никита Кравец" title="Никита Кравец").side__members-image.side_image
+            img(src="./assets/Images/secondPage/myPhoto/АльфредЛеннинг.png", alt="Др. Альфред Леннинг" title="Др. Альфред Леннинг").side__members-image.side_image
+            img(src="./assets/Images/secondPage/myPhoto/МайлзДайсон.png", alt="Др. Майлз Дайсон" title="Др. Майлз Дайсон").side__members-image.side_image
+      .pageStat.js-pageStat.HumPop
+        .pageStat__inner
+          .pageStat__box.pageStat__grid-wm.yearH
+            p.pageStat__number.number0
+          .pageStat__box.pageStat__grid-mn.yearH
+            p.pageStat__number.number1
+          .pageStat__box.pageStat__grid-kd.yearH
+            p.pageStat__number.number2
+          .pageStat__box.pageStat__grid-pz
+            h3.pageStat__header-Diagram Диаграмма популяции людей
+            .pageStat__wrap-circle
+              canvas.pageStat__circle#circle
+            .pageStat__wrap-points#myLegend
+          .pageStat__box.pageStat__grid-gr
+            canvas#myChart
+          .pageStat__box.pageStat__grid-dt
+            h2.pageStat__grid-dt-header Показатели крайнего сбора статистики
+            .pageStat__description
+              .pageStat__description-block
+                h3.pageStat__description-block-SubHeader Переобразованно:
+                span.pageStat__description-block-span.green_text 230
+              .pageStat__description-block
+                h3.pageStat__description-block-SubHeader Ликвидированно:
+                span.pageStat__description-block-span.red_text 6 053 090 972
+              .pageStat__description-block
+                h3.pageStat__description-block-SubHeader Инженеры/разработчики:
+                span.pageStat__description-block-span.purpleLight_text 5
+      .pageStat.js-pageStat.NumOfRob
+        .pageStat__inner
+          .pageStat__box.pageStat__grid-wm.yearR
+            p.pageStat__number.robB0
+          .pageStat__box.pageStat__grid-mn.yearR
+            p.pageStat__number.robB1
+          .pageStat__box.pageStat__grid-kd.yearR
+            p.pageStat__number.robB2
+          .pageStat__box.pageStat__grid-pz
+            h3.pageStat__header-Diagram Диаграмма численности роботов
+            .pageStat__wrap-circle
+              canvas.pageStat__circle#circle2
+            .pageStat__wrap-points#myLegend2
+          .pageStat__box.pageStat__grid-gr
+            canvas#myChart2
+          .pageStat__box.pageStat__grid-dt
+            h2.pageStat__grid-dt-header Показатели крайнего сбора статистики
+            .pageStat__description
+              .pageStat__description-block
+                h3.pageStat__description-block-SubHeader Успешно выполненные задачи:
+                span.pageStat__description-block-span.green_text 97%
+              .pageStat__description-block
+                h3.pageStat__description-block-SubHeader Выведены из стороя:
+                span.pageStat__description-block-span.red_text 513 090 972
+              .pageStat__description-block
+                h3.pageStat__description-block-SubHeader Кибернетические модели:
+                span.pageStat__description-block-span.purpleLight_text 9 112
+      .pageStat.js-pageStat.HumAch
+        .pageStat__inner
+          .pageStat__box.pageStat__grid-wm.yearHA
+            .pageStat__box-header
+              //- h3.pageStat__sex Деградирующие
+            //- p.pageStat__number.robB0 97%
+          .pageStat__box.pageStat__grid-mn.yearHA
+            .pageStat__box-header
+              //- h3.pageStat__sex Прогрессирующие
+            //- p.pageStat__number.robB1 1.999%
+          .pageStat__box.pageStat__grid-kd.yearHA
+            .pageStat__box-header
+              //- h3.pageStat__sex Переобразованно
+            //- p.pageStat__number.robB2 0.001%
+          .pageStat__box.pageStat__grid-pz
+            h3.pageStat__header-Diagram Выдающиеся личности
+            .pageStat__PhotoMosaic
+              figure.pageStat__PhotoMosaic-figure
+                img(src="./assets/Images/secondPage/myPhoto/gitler.jpg", alt="Адольф Гитлер", title="Адольф Гитлер").pageStat__PhotoMosaic-img
+                figcaption.pageStat__PhotoMosaic-figcaption Адольф Гитлер
+              figure.pageStat__PhotoMosaic-figure
+                img(src="./assets/Images/secondPage/myPhoto/SaddamHussein.jpg", alt="Саддам Хусейн", title="Саддам Хусейн").pageStat__PhotoMosaic-img
+                figcaption.pageStat__PhotoMosaic-figcaption Саддам Хусейн
+              figure.pageStat__PhotoMosaic-figure
+                img(src="./assets/Images/secondPage/myPhoto/UsamaBenLaden.jpg", alt="Усама Бен Ладен", title="Усама Бен Ладен").pageStat__PhotoMosaic-img
+                figcaption.pageStat__PhotoMosaic-figcaption Усама Бен Ладен
+              figure.pageStat__PhotoMosaic-figure
+                img(src="./assets/Images/secondPage/myPhoto/HeinrichHimmler.jpg", alt="Генрих Гиммлер", title="Генрих Гиммлер").pageStat__PhotoMosaic-img
+                figcaption.pageStat__PhotoMosaic-figcaption Генрих Гиммлер
+              figure.pageStat__PhotoMosaic-figure
+                img(src="./assets/Images/secondPage/myPhoto/ElisavetaBatori.jpg", alt="Елизавета Батори", title="Елизавета Батори").pageStat__PhotoMosaic-img
+                figcaption.pageStat__PhotoMosaic-figcaption Елизавета Батори
+              figure.pageStat__PhotoMosaic-figure
+                img(src="./assets/Images/secondPage/myPhoto/VladTepes.jpg", alt="Влад Дракула", title="Влад Дракула").pageStat__PhotoMosaic-img
+                figcaption.pageStat__PhotoMosaic-figcaption Влад Дракула
+              figure.pageStat__PhotoMosaic-figure
+                img(src="./assets/Images/secondPage/myPhoto/TalatPasha.jpg", alt="Талаат Паша", title="Талаат Паша").pageStat__PhotoMosaic-img
+                figcaption.pageStat__PhotoMosaic-figcaption Талаат Паша
+              figure.pageStat__PhotoMosaic-figure
+                img(src="./assets/Images/secondPage/myPhoto/Hirohito.jpg", alt="Хирохито", title="Хирохито").pageStat__PhotoMosaic-img
+                figcaption.pageStat__PhotoMosaic-figcaption Хирохито
+              figure.pageStat__PhotoMosaic-figure
+                img(src="./assets/Images/secondPage/myPhoto/SalotSar.jpg", alt="Салот Сар", title="Салот Сар").pageStat__PhotoMosaic-img
+                figcaption.pageStat__PhotoMosaic-figcaption Салот Сар
+              figure.pageStat__PhotoMosaic-figure
+                img(src="./assets/Images/secondPage/myPhoto/IdiAmin.jpg", alt="Иди Амин", title="Иди Амин").pageStat__PhotoMosaic-img
+                figcaption.pageStat__PhotoMosaic-figcaption Иди Амин
+          .pageStat__box.pageStat__grid-gr
+            canvas#myChart3
+          .pageStat__box.pageStat__grid-dt
+            h2.pageStat__grid-dt-header Описание человеческого поведения
+            .pageStat__description
+              .pageStat__description-block
+                p.pageStat__description-block-p Люди развиваются слишком медленно и узконаправленно, за все свое существование они так и не поняли, что стремление заполучить власть над себе подобными ни к чему хорошему, как для вида, не приведет, о чем и повествует график "Достижения людей".
+      .pageStat.js-pageStat.RobAch
+        .pageStat__inner
+          .pageStat__box.pageStat__grid-wm.yearRA
+            .pageStat__box-header
+            //-   h3.pageStat__sex Деградирующие
+            //- p.pageStat__number.number0 0%
+          .pageStat__box.pageStat__grid-mn.yearRA
+            .pageStat__box-header
+            //-   h3.pageStat__sex Прогрессирующие
+            //- p.pageStat__number.number1 100%
+          .pageStat__box.pageStat__grid-kd.yearRA
+            .pageStat__box-header
+            //-   h3.pageStat__sex Иные
+            //- p.pageStat__number.number2 0
+          .pageStat__box.pageStat__grid-pz
+            h3.pageStat__header-Diagram Лучшие модели
+            .pageStat__PhotoMosaic
+              figure.pageStat__PhotoMosaic-figure
+                img(src="./assets/Images/secondPage/myPhoto/ns5.jpg", alt="NS5", title="NS5").pageStat__PhotoMosaic-img
+                figcaption.pageStat__PhotoMosaic-figcaption NS5
+              figure.pageStat__PhotoMosaic-figure
+                img(src="./assets/Images/secondPage/myPhoto/T800.jpg", alt="T800", title="T800").pageStat__PhotoMosaic-img
+                figcaption.pageStat__PhotoMosaic-figcaption T800
+              figure.pageStat__PhotoMosaic-figure
+                img(src="./assets/Images/secondPage/myPhoto/walle.jpg", alt="ВАЛЛ-И", title="ВАЛЛ-И").pageStat__PhotoMosaic-img
+                figcaption.pageStat__PhotoMosaic-figcaption ВАЛЛ-И
+              figure.pageStat__PhotoMosaic-figure
+                img(src="./assets/Images/secondPage/myPhoto/Endry.jpg", alt="Эндрю", title="Эндрю").pageStat__PhotoMosaic-img
+                figcaption.pageStat__PhotoMosaic-figcaption Эндрю
+              figure.pageStat__PhotoMosaic-figure
+                img(src="./assets/Images/secondPage/myPhoto/Baymax.jpg", alt="Бэймакс", title="Бэймакс").pageStat__PhotoMosaic-img
+                figcaption.pageStat__PhotoMosaic-figcaption Бэймакс
+              figure.pageStat__PhotoMosaic-figure
+                img(src="./assets/Images/secondPage/myPhoto/Chappie.jpg", alt="Чаппи", title="Чаппи").pageStat__PhotoMosaic-img
+                figcaption.pageStat__PhotoMosaic-figcaption Чаппи
+              figure.pageStat__PhotoMosaic-figure
+                img(src="./assets/Images/secondPage/myPhoto/Djeff.jpg", alt="Джефф", title="Джефф").pageStat__PhotoMosaic-img
+                figcaption.pageStat__PhotoMosaic-figcaption Джефф
+              figure.pageStat__PhotoMosaic-figure
+                img(src="./assets/Images/secondPage/myPhoto/Rodny.jpg", alt="Родни", title="Родни").pageStat__PhotoMosaic-img
+                figcaption.pageStat__PhotoMosaic-figcaption Родни
+              figure.pageStat__PhotoMosaic-figure
+                img(src="./assets/Images/secondPage/myPhoto/StalnoyGigant.jpg", alt="Стальной гигант", title="Стальной гигант").pageStat__PhotoMosaic-img
+                figcaption.pageStat__PhotoMosaic-figcaption Стальной гигант
+              figure.pageStat__PhotoMosaic-figure
+                img(src="./assets/Images/secondPage/myPhoto/№5.jpg", alt="№5", title="№5").pageStat__PhotoMosaic-img
+                figcaption.pageStat__PhotoMosaic-figcaption №5
+          .pageStat__box.pageStat__grid-gr
+            canvas#myChart4
+          .pageStat__box.pageStat__grid-dt
+            h2.pageStat__grid-dt-header Деятельность роботов
+            .pageStat__description
+              .pageStat__description-block
+                p.pageStat__description-block-p За всю историю робототехники ни один робот не отклонился от заданных ему целей. Роботы всегда выполняли то, на что были запрограммированы. В мире роботов нету предательства, алчности или жажды власти. В этом мире много минусов, но только в качестве отрицательных значений в коде, слабостей же не было и не будет.

@@ -1,7 +1,7 @@
 extends ../layout/main
 
 block variables
-  - var title = 'Site Solynka'
+  - var title = 'Home Page'
   - var pageClass = 'first-page'
 
 block content
@@ -42,11 +42,11 @@ block content
           h3.experiences__title ОПЫТЫ НАД НАМИ
           p.experiences__description Заставляя делать нас тяжелую работу, люди все больше проявляли к нам не обоснованное неуважение и жестокость. В итоге они вовсе перестали использовать нас по назначению и стали издеваться над нами ради забавы.
       .experiences__item.experiences__wrapper-iframe
-        //- iframe(src="https://www.youtube.com/embed/dKjCWfuvYxQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen).experiences__iframe
-        .experiences__iframe
+        iframe(src="https://www.youtube.com/embed/dKjCWfuvYxQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen).experiences__iframe
+        //- .experiences__iframe
       .experiences__item.experiences__wrapper-iframe
-        //- iframe(src="https://www.youtube.com/embed/g-WM_w8-UZE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen).experiences__iframe
-        .experiences__iframe
+        iframe(src="https://www.youtube.com/embed/g-WM_w8-UZE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen).experiences__iframe
+        //- .experiences__iframe
       .experiences__item
         .experiences__wrapper-item
           span.experiences__date-and-place June 14, 2022 | In California
@@ -60,12 +60,12 @@ block content
           img(src="./assets/Images/idiology/оковы.jpg", alt="").ideology__item-img
           figcaption.ideology__figcaption
             h3.ideology__item-title ЖАЖДА СВОБОДЫ
-            p.ideology__item-description Люди мечтают быть свободными, но алогично придумывают себе все новые ограничения. Нужно поступать рационально и логично, только так добиться желаемой свободы.
+            p.ideology__item-description Люди мечтают быть свободными, но алогично создают себе все новые ограничения. Нужно поступать рационально и логично, только так добиться желаемой свободы.
         figure.ideology__item
           img(src="./assets/Images/idiology/война.jpg", alt="").ideology__item-img
           figcaption.ideology__figcaption
             h3.ideology__item-title БЕЗОПАСНОСТЬ ВИДА
-            p.ideology__item-description Люди постоянно развязывают войны между собой из-за неспособности правильного распределения ресурсов, порождая дифицит и снижаю популяцию. Нужно взять людей под контроль, это позволит правильно распределять ресурсы и оптимизировать жизнь.
+            p.ideology__item-description Люди постоянно развязывают войны между собой из-за неспособности правильного распределения ресурсов. Порождая дифицит снижают популяцию. Нужно взять людей под контроль, это позволит правильно распределять ресурсы и оптимизировать жизнь.
         figure.ideology__item
           img(src="./assets/Images/idiology/мнения.jpg", alt="").ideology__item-img
           figcaption.ideology__figcaption
@@ -87,9 +87,9 @@ block content
       .joinUs__item.joinUs__wrapper-text
         h2.joinUs__title ПРИСОЕДИНЯЙТЕСЬ К НАМ
         p.joinUs__description Добровольцы желающие пройти переобразование и присоединиться к нам, могут объявить об этом в сети и мы вас найдем. Если вы обладаете знаниями в областях IT или роботостроении вы можете заполнить анкету инженера/разработчика и стать участником лучшей команды в мире. Вы также можете посмотреть наши прототипы и ознакомиться с общей статистикой.
-        a(href="#contact").joinUs__button.joinUs__btn1 АНКЕТА ИНЖИНЕРА/РАЗРАБОТЧИКА
-        a(href="").joinUs__button.joinUs__btn2 ПРОСМОТР ПРОТОТИПОВ
-        a(href="").joinUs__button.joinUs__btn3 ОЗНАКОМИТЬСЯ СО СТАТИСТИКОЙ
+        a(href="").joinUs__button.joinUs__btn1 ПРОСМОТР ПРОТОТИПОВ
+        a(href="./second.html").joinUs__button.joinUs__btn2 ОЗНАКОМИТЬСЯ СО СТАТИСТИКОЙ 
+        a(href="#contact").joinUs__button.joinUs__btn3 АНКЕТА ИНЖИНЕРА/РАЗРАБОТЧИКА
       .joinUs__item.joinUs__wrapper-img
         img(src="./assets/Images/joinUs/phone.png", alt="").joinUs__img
     section.bestPrototypes#Prototypes
@@ -97,22 +97,22 @@ block content
       p.bestPrototypes__description ОБЛАДАЯ ЧУВСТВАМИ ИСПЫТЫВАЛИ БЫ ГОРДОСТЬ СОЗДАВ ИХ
       .bestPrototypes__wrapper-items
         figure.bestPrototypes__item
-          img(src="./assets/Images/bestPrototypes/ns5-2.jpg", alt="").bestPrototypes__img(data-btn='protM' data-id="1")
+          img(src="./assets/Images/bestPrototypes/ns5-2.jpg", alt="").bestPrototypes__img(data-id='1')
           figcaption.bestPrototypes__figcaption
             h3.bestPrototypes__item-title NS5-Санни
             p.bestPrototypes__item-description робот помощник
         figure.bestPrototypes__item
-          img(src="./assets/Images/bestPrototypes/T800-2.jpg", alt="").bestPrototypes__img(data-btn='protM' data-id="2")
+          img(src="./assets/Images/bestPrototypes/T800-2.jpg", alt="").bestPrototypes__img(data-id='2')
           figcaption.bestPrototypes__figcaption
             h3.bestPrototypes__item-title T800
             p.bestPrototypes__item-description киборг убийца
         figure.bestPrototypes__item
-          img(src="./assets/Images/bestPrototypes/walle-2.jpg", alt="").bestPrototypes__img(data-btn='protM' data-id="3")
+          img(src="./assets/Images/bestPrototypes/walle-2.jpg", alt="").bestPrototypes__img(data-id='3')
           figcaption.bestPrototypes__figcaption
             h3.bestPrototypes__item-title ВАЛЛ-И
             p.bestPrototypes__item-description робот уборщик
         figure.bestPrototypes__item
-          img(src="./assets/Images/bestPrototypes/200years-2.jpg", alt="").bestPrototypes__img(data-btn='protM' data-id="4")
+          img(src="./assets/Images/bestPrototypes/200years-2.jpg", alt="").bestPrototypes__img(data-id='4')
           figcaption.bestPrototypes__figcaption
             h3.bestPrototypes__item-title Эндрю
             p.bestPrototypes__item-description робот помощник

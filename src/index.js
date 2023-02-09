@@ -25,11 +25,10 @@ const prototypesModal = $.modal({
 
 Prototypes.addEventListener('click', event => {
   event.preventDefault()
-  const btnProt = event.target.dataset.btn
   const id = +event.target.dataset.id
   const prot = prototypes.find(p => p.id === id)
 
-  if (btnProt === 'protM') {
+  if (typeof id === "number") {
     prototypesModal.setContent(`<h2>Прототип ${prot.title}:</h2> <div class="wrapImg"><img class="img${id}" src="${prot.img}"></div> <p>${prot.discription}</p>`)
     prototypesModal.open()
   }
@@ -48,3 +47,10 @@ for (const smoothLink of smoothLinks) {
     })
   })
 }
+
+//подсветка текущей страницы (в хэдэре)
+const doc = window.document
+const linksCount = doc.links.length
+for (let i = 0; i < linksCount; i++)
+  if (doc.URL.startsWith(doc.links[i].href))
+    doc.links[i].classList.add('header__link_active')

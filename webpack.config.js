@@ -38,12 +38,12 @@ const sourceMap = () => {
 module.exports = {
   context: path.resolve(__dirname, 'src'),
   mode: 'development',
-  entry: './index.js',
-  // entry: {
-  //   index: ['./index.js'],
-  //   second: ['./secondPage.js'],
-  //   third: ['./thirdPage.js']
-  // },
+  // entry: './index.js',
+  entry: {
+    index: ['./index.js'],
+    second: ['./secondPage.js'],
+    // third: ['./thirdPage.js']
+  },
   output: {
     filename: filename('js'),
     path: path.resolve(__dirname, 'dist'),
@@ -104,13 +104,13 @@ module.exports = {
       // template: './index.html'
       filename: 'index.html',
       template: './pug/pages/index.pug',
-      // chunks: ['index']
+      chunks: ['index']
     }),
-    // new HTMLWebpackPlugin({
-    //   filename: 'second.html',
-    //   template: './pug/pages/second.pug',
-    //   chunks: ['second']
-    // }),
+    new HTMLWebpackPlugin({
+      filename: 'second.html',
+      template: './pug/pages/second.pug',
+      chunks: ['second']
+    }),
     // new HTMLWebpackPlugin({
     //   filename: 'third.html',
     //   template: './pug/pages/third.pug',
@@ -163,14 +163,6 @@ module.exports = {
           to: path.resolve(__dirname, 'dist/assets/Images/idiology')
         },
         {
-          from: path.resolve(__dirname, 'src/assets/Images/idiology/особоОдаренный.jpg'),
-          to: path.resolve(__dirname, 'dist/assets/Images/idiology')
-        },
-        {
-          from: path.resolve(__dirname, 'src/assets/Images/idiology/особоОдаренный.jpg'),
-          to: path.resolve(__dirname, 'dist/assets/Images/idiology')
-        },
-        {
           from: path.resolve(__dirname, 'src/assets/Images/icons/iconLern.png'),
           to: path.resolve(__dirname, 'dist/assets/Images/icons')
         },
@@ -198,25 +190,124 @@ module.exports = {
           from: path.resolve(__dirname, 'src/assets/Images/bestPrototypes/200years-2.jpg'),
           to: path.resolve(__dirname, 'dist/assets/Images/bestPrototypes')
         },
+        {
+          from: path.resolve(__dirname, 'src/assets/Images/secondPage/myPhoto/me.jpg'),
+          to: path.resolve(__dirname, 'dist/assets/Images/secondPage/myPhoto')
+        },
+        {
+          from: path.resolve(__dirname, 'src/assets/Images/secondPage/myPhoto/АльфредЛеннинг.png'),
+          to: path.resolve(__dirname, 'dist/assets/Images/secondPage/myPhoto')
+        },
+        {
+          from: path.resolve(__dirname, 'src/assets/Images/secondPage/myPhoto/МайлзДайсон.png'),
+          to: path.resolve(__dirname, 'dist/assets/Images/secondPage/myPhoto')
+        },
+        {
+          from: path.resolve(__dirname, 'src/assets/Images/secondPage/myPhoto/gitler.jpg'),
+          to: path.resolve(__dirname, 'dist/assets/Images/secondPage/myPhoto')
+        },
+        {
+          from: path.resolve(__dirname, 'src/assets/Images/secondPage/myPhoto/SaddamHussein.jpg'),
+          to: path.resolve(__dirname, 'dist/assets/Images/secondPage/myPhoto')
+        },
+        {
+          from: path.resolve(__dirname, 'src/assets/Images/secondPage/myPhoto/UsamaBenLaden.jpg'),
+          to: path.resolve(__dirname, 'dist/assets/Images/secondPage/myPhoto')
+        },
+        {
+          from: path.resolve(__dirname, 'src/assets/Images/secondPage/myPhoto/ElisavetaBatori.jpg'),
+          to: path.resolve(__dirname, 'dist/assets/Images/secondPage/myPhoto')
+        },
+        {
+          from: path.resolve(__dirname, 'src/assets/Images/secondPage/myPhoto/HeinrichHimmler.jpg'),
+          to: path.resolve(__dirname, 'dist/assets/Images/secondPage/myPhoto')
+        },
+        {
+          from: path.resolve(__dirname, 'src/assets/Images/secondPage/myPhoto/VladTepes.jpg'),
+          to: path.resolve(__dirname, 'dist/assets/Images/secondPage/myPhoto')
+        },
+        {
+          from: path.resolve(__dirname, 'src/assets/Images/secondPage/myPhoto/Hirohito.jpg'),
+          to: path.resolve(__dirname, 'dist/assets/Images/secondPage/myPhoto')
+        },
+        {
+          from: path.resolve(__dirname, 'src/assets/Images/secondPage/myPhoto/IdiAmin.jpg'),
+          to: path.resolve(__dirname, 'dist/assets/Images/secondPage/myPhoto')
+        },
+        {
+          from: path.resolve(__dirname, 'src/assets/Images/secondPage/myPhoto/SalotSar.jpg'),
+          to: path.resolve(__dirname, 'dist/assets/Images/secondPage/myPhoto')
+        },
+        {
+          from: path.resolve(__dirname, 'src/assets/Images/secondPage/myPhoto/TalatPasha.jpg'),
+          to: path.resolve(__dirname, 'dist/assets/Images/secondPage/myPhoto')
+        },
+        {
+          from: path.resolve(__dirname, 'src/assets/Images/secondPage/myPhoto/Baymax.jpg'),
+          to: path.resolve(__dirname, 'dist/assets/Images/secondPage/myPhoto')
+        },
+        {
+          from: path.resolve(__dirname, 'src/assets/Images/secondPage/myPhoto/Chappie.jpg'),
+          to: path.resolve(__dirname, 'dist/assets/Images/secondPage/myPhoto')
+        },
+        {
+          from: path.resolve(__dirname, 'src/assets/Images/secondPage/myPhoto/Djeff.jpg'),
+          to: path.resolve(__dirname, 'dist/assets/Images/secondPage/myPhoto')
+        },
+        {
+          from: path.resolve(__dirname, 'src/assets/Images/secondPage/myPhoto/ns5.jpg'),
+          to: path.resolve(__dirname, 'dist/assets/Images/secondPage/myPhoto')
+        },
+        {
+          from: path.resolve(__dirname, 'src/assets/Images/secondPage/myPhoto/№5.jpg'),
+          to: path.resolve(__dirname, 'dist/assets/Images/secondPage/myPhoto')
+        },
+        {
+          from: path.resolve(__dirname, 'src/assets/Images/secondPage/myPhoto/StalnoyGigant.jpg'),
+          to: path.resolve(__dirname, 'dist/assets/Images/secondPage/myPhoto')
+        },
+        {
+          from: path.resolve(__dirname, 'src/assets/Images/secondPage/myPhoto/T800.jpg'),
+          to: path.resolve(__dirname, 'dist/assets/Images/secondPage/myPhoto')
+        },
+        {
+          from: path.resolve(__dirname, 'src/assets/Images/secondPage/myPhoto/walle.jpg'),
+          to: path.resolve(__dirname, 'dist/assets/Images/secondPage/myPhoto')
+        },
+        {
+          from: path.resolve(__dirname, 'src/assets/Images/secondPage/myPhoto/Endry.jpg'),
+          to: path.resolve(__dirname, 'dist/assets/Images/secondPage/myPhoto')
+        },
+        {
+          from: path.resolve(__dirname, 'src/assets/Images/secondPage/myPhoto/Rodny.jpg'),
+          to: path.resolve(__dirname, 'dist/assets/Images/secondPage/myPhoto')
+        },
       ]
     }),
     new ImageMinimizerPlugin({
-      minimizerOptions: {
-        plugins: [
-          ['gifsicle', { interlaced: true }],
-          ['jpegtran', { progressive: true }],
-          ['optipng', { optimizationLevel: 5 }],
-          [
-            'svgo',
-            {
-              plugins: [
-                {
-                  removeViewBox: false,
-                },
-              ],
-            },
+      minimizer: {
+        implementation: ImageMinimizerPlugin.imageminMinify,
+        options: {
+          plugins: [
+            ['gifsicle', { interlaced: true }],
+            ['jpegtran', { progressive: true }],
+            ['optipng', { optimizationLevel: 5 }],
+            [
+              'svgo',
+              {
+                plugins: [
+                  // {
+                  //   removeViewBox: false,
+                  // },
+                  {
+                    name: 'removeViewBox',
+                    active: false
+                  },
+                ],
+              },
+            ],
           ],
-        ],
+        },
       },
     })
   ]
