@@ -42,7 +42,7 @@ module.exports = {
   entry: {
     index: ['./index.js'],
     second: ['./secondPage.js'],
-    // third: ['./thirdPage.js']
+    third: ['./thirdPage.js']
   },
   output: {
     filename: filename('js'),
@@ -96,6 +96,16 @@ module.exports = {
         options: {
           name: '[path][name].[ext]',
         },
+      },
+      {
+        test: /\.m?js$/,
+        exclude: /node_modules/,
+        use: {
+          loader: "babel-loader",
+          options: {
+            presets: ['@babel/preset-env', '@babel/preset-react']
+          }
+        }
       }
     ]
   },
@@ -111,11 +121,11 @@ module.exports = {
       template: './pug/pages/second.pug',
       chunks: ['second']
     }),
-    // new HTMLWebpackPlugin({
-    //   filename: 'third.html',
-    //   template: './pug/pages/third.pug',
-    //   chunks: ['third']
-    // }),
+    new HTMLWebpackPlugin({
+      filename: 'third.html',
+      template: './pug/pages/third.pug',
+      chunks: ['third']
+    }),
     new CleanWebpackPlugin(),
     new MiniCssExtractPlugin({
       filename: filename('css'),
@@ -281,6 +291,46 @@ module.exports = {
         {
           from: path.resolve(__dirname, 'src/assets/Images/secondPage/myPhoto/Rodny.jpg'),
           to: path.resolve(__dirname, 'dist/assets/Images/secondPage/myPhoto')
+        },
+        {
+          from: path.resolve(__dirname, 'src/assets/Images/thirdPage/Ава.jpg'),
+          to: path.resolve(__dirname, 'dist/assets/Images/thirdPage')
+        },
+        {
+          from: path.resolve(__dirname, 'src/assets/Images/thirdPage/Дубина.png'),
+          to: path.resolve(__dirname, 'dist/assets/Images/thirdPage')
+        },
+        {
+          from: path.resolve(__dirname, 'src/assets/Images/thirdPage/Дэвид.jpg'),
+          to: path.resolve(__dirname, 'dist/assets/Images/thirdPage')
+        },
+        {
+          from: path.resolve(__dirname, 'src/assets/Images/thirdPage/C-3PO.jpg'),
+          to: path.resolve(__dirname, 'dist/assets/Images/thirdPage')
+        },
+        {
+          from: path.resolve(__dirname, 'src/assets/Images/thirdPage/Eva.png'),
+          to: path.resolve(__dirname, 'dist/assets/Images/thirdPage')
+        },
+        {
+          from: path.resolve(__dirname, 'src/assets/Images/thirdPage/R2-D2.jpg'),
+          to: path.resolve(__dirname, 'dist/assets/Images/thirdPage')
+        },
+        {
+          from: path.resolve(__dirname, 'src/assets/Images/thirdPage/Robocop.jpg'),
+          to: path.resolve(__dirname, 'dist/assets/Images/thirdPage')
+        },
+        {
+          from: path.resolve(__dirname, 'src/assets/Images/thirdPage/T-1000.jpg'),
+          to: path.resolve(__dirname, 'dist/assets/Images/thirdPage')
+        },
+        {
+          from: path.resolve(__dirname, 'src/assets/Images/thirdPage/РукаДэлаСпунера.jpg'),
+          to: path.resolve(__dirname, 'dist/assets/Images/thirdPage')
+        },
+        {
+          from: path.resolve(__dirname, 'src/assets/Images/thirdPage/Атлас.png'),
+          to: path.resolve(__dirname, 'dist/assets/Images/thirdPage')
         },
       ]
     }),
